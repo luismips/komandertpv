@@ -5,8 +5,8 @@ luismips@gmail.com
 ###ENGLISH - ESPAÑOL
 
 Prueba la demo online:
-- Como trabajador: [http://komandertpv.cpm/wkomander](http://komandertpv.com/wkomander)
-- Como cliente: [http://komandertpv.cpm/wkomander/cliente](http://komandertpv.com/wkomander/cliente)
+- Como trabajador: [http://komandertpv.com/wkomander](http://komandertpv.com/wkomander)
+- Como cliente: [http://komandertpv.com/wkomander/cliente](http://komandertpv.com/wkomander/cliente)
 
 KomanderTPV es un sistema para gestionar su bar o restaurante desde cualquier dispositivo móvil con navegador web. 
 
