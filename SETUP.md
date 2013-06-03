@@ -1,55 +1,56 @@
-#INSTALACION KomanderTPV
+#SETUP KomanderTPV
 ================
 
-KomanderTPV es un sistema desarrollado con HTML, PHP y JavaScript. Corre bajo un servidor Apache y un servidor de base de datos MySQL. Utiliza Ghostscript y GSview para la impresión de documentos.
+KomanderTPV is a system developed in HTML, PHP y JavaScript. It runs on an Apache server and using MySQL as database server. It uses Ghostscript and GSview to print documents.
 
-Actualmente no existe un archivo de instalación para facilitar su puesta en marcha. Espero tener tiempo para crear una instalación más fácil y automatizada, ya que es una de las tareas pendientes, junto con un backend mejorado para no tener que usar phpMyAdmin para realizar ciertas configuraciones.
+Actually, there's no onstallation file to easy the setup. I hope to have some time to do it more comfortable, it's one of the TODO task just with a better backend so the user don't need phpMyAdmin for most of the admin work.
 
-Ahora que el sistema es de código abierto se podrá mejorar todo más rápidamente gracias a la colaboración de todas aquellas personas que quieran participar en el proyecto.
+Now that the system is Open Source, it could be more efficient in less time thanks to the colaboration from people who want to contribute to the project.
+ 
 
 =================
 
 
-##REQUISITOS
+##REQUIREMENTS:
 
-- Servidor web: 
+- Web server: 
 	
 	a) Xampp: http://sourceforge.net/projects/xampp/
 	b) Wamp: http://www.wampserver.com/
 	
-	- httpd.conf debe estar configurado para permitir acceso desde cualquier equipo en la red.
-	- Configurar según timezone en php.ini
+	- httpd.conf must allow access to devices in the network.
+	- Configure timezone in php.ini
 
 - Ghostcript: http://www.ghostscript.com/	
 
 - GSview: http://pages.cs.wisc.edu/~ghost/gsview/index.htm
 	
-- Poner una IP fija en el equipo servidor
+- Put a static IP on the computer.
 	
 	
 
 
-##INSTALACIÓN
+##SETUP
 
-- Crear base de datos en MySQL (Cualquier nombre es bueno)
+- Create a database in MySQL (Any name you hate)
 
-- Importar uno de los archivos sql a la base de datos creada:
+- Import one of the next files to the just created database:
 
-	- demo.sql: Base de datos de demostración.
-	- wkomander: Base de datos vacía.
+	- demo.sql: demo database with products, tables....
+	- wkomander.sql: Empty database.
 
-- Copiar las carpetas 'wkomander' y 'pdf' dentro del directorio publico de Apache (/www o /httpdocs dependiendo del sistema operativo)
-	- La carpeta 'wkomander' se puede renombrar al nombre que prefiera. Si lo cambia, tendrá que indicarlo modificando la variable _APP_FOLDER_ dentro del archivo config.php
+- Copy folders 'wkomander' and 'pdf' inside Apache's public folder (/www or /httpdocs depending on your OS)
+	- You can rename 'wkomander' as you want. If you do so, you must edit config.php and change the variable '_APP_FOLDER_'.
 
 
 ##CONFIGURACION
 
 
-- Abrir archivo /wkomander/clases/db/config.php y modificar según las necesidades.
+- Abrir archivo /wkomander/clases/db/config.php y modificar segï¿½n las necesidades.
 
 - Datos de la empresa:
 	- Acceder a la base de datos (localhost/phpmyadmin)
-	- Entrar en la tabla empresa y añadir o editar una nueva empresa. Se pueden añadir las empresas que necesite. La empresa seleccionada está indicada en el valor _EMPRESA_ dentro del arhivo config.php.
+	- Entrar en la tabla empresa y aï¿½adir o editar una nueva empresa. Se pueden aï¿½adir las empresas que necesite. La empresa seleccionada estï¿½ indicada en el valor _EMPRESA_ dentro del arhivo config.php.
 
 - Configurar impresora de caja:
 	- Cambiar nombre a la impresora de caja y poner: 'tiket'
@@ -58,7 +59,7 @@ Ahora que el sistema es de código abierto se podrá mejorar todo más rápidamente 
 		- tiket_todo.php
 		- abrir_cliente.php
 		- /clases/_pte.php
-	(Buscar en cada archivo la palabra 'Ghostgum' y sustituir por la ruta correcta donde esté instalado gsprint)
+	(Buscar en cada archivo la palabra 'Ghostgum' y sustituir por la ruta correcta donde estï¿½ instalado gsprint)
 
 
 
