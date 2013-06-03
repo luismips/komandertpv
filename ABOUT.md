@@ -1,4 +1,4 @@
-#ACERCA DE/ABOUT KOMANDERTPV
+#ABOUT / ACERCA DE KOMANDERTPV
 --------
 
 ###ENGLISH - [ESPAÑOL](#espaol----english)
