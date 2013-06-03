@@ -29,7 +29,7 @@ Ahora que el sistema es de código abierto se podrá mejorar todo más rápidame
 	
 
 
-##INSTALACI�N
+##INSTALACION
 
 - Crear base de datos en MySQL (Cualquier nombre es bueno)
 
