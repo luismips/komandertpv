@@ -1,27 +1,11 @@
 #ACERCA DE/ABOUT KOMANDERTPV
 --------
-###ESPAÑOL -  [ENGLISH](#english---espaol)
 
-El nombre de KomanderTPV es una mezcla del español 'comandero' (libreta donde se anotan los pedidos) y del inglés   'commander' (el que comanda, en este caso). Escogí la K en vez de la C por cuestión de gusto. Ya que en las  búsquedas de 'Komander' en Internet mostraban a un cantoautor, 'El Komander', tuve que añadír TPV (Terminal Punto de  Venta) al final para marcar la diferencia.
-
-La idea de hacer este sistema se me ocurrió la primera vez que tuve que trabajar de camarero. Tenían un par de Ordermans que, junto al TPV   y varias impresoras, habían costado unos 6.000 €. 
-
-Como programador y camarero, veía las cosas que se podían mejorar en el sistema. Así que decidí crear un programa  para ahorrar unos miles de euros simplemente utilizando smartphones y tablets en vez de telecomanderos caros o impresoras.  
-
-Comencé desarrollando el programa en Java. Se creó una aplicación para PC usando servlets. También se creo la app  para Android. Incluso se creo un comandero en Flash. Pero antes de continuar creando una app para iOS decidí  replantearme el asunto. No tengo tiempo para estar manteniendo versiones distintas para cada dispositivo. Así que  pensé en usar una tecnología que me permitiera mantener una versión que corriera en cualquier dispositivo. 
-
-Así que en Febrero de 2012 comencé a desarrollar una nueva versión en HTML, PHP y JavaScript, lo cual me permitía  mantener una sola versión que pudiera correr en cualquier dispositivo (PC, Android, iOS...).
-
-En Mayo de 2013 y con una versión beta bastante aceptable, KomanderTPV pasa a ser Open Source.
-
-A partir de ahora, cualquiera puede instalar KomanderTPV gratuitamente en su restaurante y beneficiarse de ello.  Cualquier desarrollador podrá añadir nuevas funcionalidades o módulos específicos a petición de los usuarios,  llegando entre todos a construir un sistema de calidad y sobre todo: LIBRE.
-
-
-###ENGLISH - [ESPAÑOL](#espaol----english)
+###ENGLISH - [ESPAÃ‘OL](#espaol----english)
 
 KomanderTPV's name comes from a mixing between 'comandero' (a notebook to write the orders) and 'commander' (who commands, in this case). I choosed K instead of C for matters of taste. When I looked for 'Komander' in search engines, it appears a singer called 'El Komander'. So I added the suffix 'TPV' (POS in english) to Komander to make a difference.
 
-The idea to develop the system came the first time I worked as a waiter. They had two Ordermans that, with the central POS and several printers, costed about 6.000 €.
+The idea to develop the system came the first time I worked as a waiter. They had two Ordermans that, with the central POS and several printers, costed about 6.000 ï¿½.
 
 As programmer and waiter, I saw the things that could be better in the system. So I decided to create a program to save some thousands of euros simply using smartphones and tablets instead of expensives 'telecommanders' or printers.
 
@@ -32,3 +16,20 @@ In February 2012, I started to develop a new version with HTML, PHP and JavaScri
 In May 2013 and with a good working beta, KomanderTPV comes Open Source.
 
 From now, everybody can install KomanderTPV for free in their restaurants and take benefits from it. Any developer can add new functions or specific modules on demand, building together a good quality system and the best... FREE
+
+###ESPAÃ‘OL -  [ENGLISH](#english---espaol)
+
+El nombre de KomanderTPV es una mezcla del espaÃ±ol 'comandero' (libreta donde se anotan los pedidos) y del inglÃ©s   'commander' (el que comanda, en este caso). EscogÃ­ la K en vez de la C por cuestiÃ³n de gusto. Ya que en las  bÃºsquedas de 'Komander' en Internet mostraban a un cantoautor, 'El Komander', tuve que aÃ±adir TPV (Terminal Punto de  Venta) al final para marcar la diferencia.
+
+La idea de hacer este sistema se me ocurriÃ³ la primera vez que tuve que trabajar de camarero. TenÃ­an un par de Ordermans que, junto al TPV   y varias impresoras, haÃ­ï¿½an costado unos 6.000 euros. 
+
+Como programador y camarero, veÃ­a las cosas que se podÃ­an mejorar en el sistema. AsÃ­ que decidÃ­ crear un programa  para ahorrar unos miles de euros simplemente utilizando smartphones y tablets en vez de telecomanderos caros o impresoras.  
+
+ComencÃ© desarrollando el programa en Java. Se creÃ³ una aplicaciÃ³n para PC usando servlets. TambiÃ©n se creo la app  para Android. Incluso se creo un comandero en Flash. Pero antes de continuar creando una app para iOS decidÃ­  replantearme el asunto. No tengo tiempo para estar manteniendo versiones distintas para cada dispositivo. AsÃ­ que  pensÃ© en usar una tecnologÃ­a que me permitiera mantener una versiÃ³n que corriera en cualquier dispositivo. 
+
+En Febrero de 2012 comencÃ© a desarrollar una nueva versiÃ³n en HTML, PHP y JavaScript, lo cual me permitÃ­a  mantener una sola versiÃ³n que pudiera correr en cualquier dispositivo (PC, Android, iOS...).
+
+En Mayo de 2013 y con una versiÃ³n beta bastante aceptable, KomanderTPV pasa a ser Open Source.
+
+A partir de ahora, cualquiera puede instalar KomanderTPV gratuitamente en su restaurante y beneficiarse de ello.  Cualquier desarrollador podrÃ¡ aÃ±adir nuevas funcionalidades o mÃ³dulos especÃ­ficos a peticiÃ³n de los usuarios,  llegando entre todos a construir un sistema de calidad y sobre todo: LIBRE.
+
