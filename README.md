@@ -32,7 +32,7 @@ ambiente.
 - Informes:
   - Cajas cerradas y movimientos.
   - Mesas abiertas.
-  - Venta camareros.
+  - Venta por camareros.
   - Venta entre fechas.
   - Stock entre fechas.
 
