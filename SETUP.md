@@ -34,7 +34,7 @@ Now that the system is Open Source, it could be more efficient in less time than
 
 - Create a database in MySQL (Any name you hate)
 
-- Import one of the next files to the just created database:
+- Import one of the next files to the created database:
 
 	- demo.sql: demo database with products, tables....
 	- wkomander.sql: Empty database.
@@ -43,23 +43,23 @@ Now that the system is Open Source, it could be more efficient in less time than
 	- You can rename 'wkomander' as you want. If you do so, you must edit config.php and change the variable '_APP_FOLDER_'.
 
 
-##CONFIGURACION
+##CONFIGURATION
 
 
-- Abrir archivo /wkomander/clases/db/config.php y modificar seg�n las necesidades.
+- Open /wkomander/clases/db/config.php and modify it as you need.
 
-- Datos de la empresa:
-	- Acceder a la base de datos (localhost/phpmyadmin)
-	- Entrar en la tabla empresa y a�adir o editar una nueva empresa. Se pueden a�adir las empresas que necesite. La empresa seleccionada est� indicada en el valor _EMPRESA_ dentro del arhivo config.php.
+- Bussiness info:
+	- Access to the database (localhost/phpmyadmin)
+	- Go to the table 'empresa'. Add, edit or do what you need. You can add more than one. Bussiness in use will be indicated in the variable '_EMPRESA_' in config.php file.
 
-- Configurar impresora de caja:
-	- Cambiar nombre a la impresora de caja y poner: 'tiket'
-	- Modificar los siguientes archivos para cambiar la ruta de 'gsprint':
+- Setup tiket printer:
+	- Change the name of the printer to: 'tiket'
+	- Modify the path to 'gsprint' in the next files:
 		- tiket.php
 		- tiket_todo.php
 		- abrir_cliente.php
 		- /clases/_pte.php
-	(Buscar en cada archivo la palabra 'Ghostgum' y sustituir por la ruta correcta donde est� instalado gsprint)
+	(Yo can look for 'Ghostgum' and replace the path to 'gsprint' for the right one)
 
 
 
