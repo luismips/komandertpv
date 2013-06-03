@@ -3,7 +3,7 @@
 
 KomanderTPV is a system developed in HTML, PHP y JavaScript. It runs on an Apache server and using MySQL as database server. It uses Ghostscript and GSview to print documents.
 
-Actually, there's no onstallation file to easy the setup. I hope to have some time to do it more comfortable, it's one of the TODO task just with a better backend so the user don't need phpMyAdmin for most of the admin work.
+Actually, there's no installation file to easy the setup. I hope to have some time to do it more comfortable, it's one of the TODO task just with a better backend so the user don't need phpMyAdmin for most of the admin work.
 
 Now that the system is Open Source, it could be more efficient in less time thanks to the colaboration from people who want to contribute to the project.
  
