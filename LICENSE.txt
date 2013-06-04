@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2012-2013 Luis M. Peña Santana
+ * Copyright (C) 2012-2013 Luis M. Peï¿½a Santana
  * KomanderTPV [http://komandertpv.com]
  * luismips@gmail.com
  *
