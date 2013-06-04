@@ -72,6 +72,8 @@ Now that the system is Open Source, it could be more efficient in less time than
 	- Configure Categories, products and modifiers from 'admin' user.
 
 
+Setup can be a little bit tedious. There's no backend still created for all administrator tasks (only categories, products and modifiers. Bit by bit, new functions and documentation will be created so you can easily maintaing the system.
 
+You can write me at luismips@gmail.com for support.
 
 
