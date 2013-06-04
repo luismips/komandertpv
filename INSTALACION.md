@@ -68,7 +68,14 @@ Ahora que el sistema es de código abierto se podrá mejorar todo más rápidame
 	- Añadir usuarios: Tabla 'usuarios' (el campo 'nivel' es la id_nivel de la tabla 'niveles')
 	- Añadir zonas: Tabla 'zonas'
 	- Añadir mesas: Tabla 'puntos'
-	- Configurar Familias, artículos y modificadores desde el usuario 'admin'
+	- Configurar Familias, artículos y modificadores desde el usuario 'admin'.
+	
+
+La configuración es un poco tediosa debido a que no hay creado un backend aún para todas las tareas de administración(sólo familias, artículos y modificadores). Poco a poco se irá creando esa funcionalidad y documentación necesaria para que no sea una tarea pesada.
+
+Puedes escribirme a luismips@gmail.com si necesitas soporte.
+
+
 
 
 
