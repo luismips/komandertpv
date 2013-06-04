@@ -64,7 +64,10 @@ Ahora que el sistema es de código abierto se podrá mejorar todo más rápidame
 		- /clases/_pte.php
 	(Buscar en cada archivo la palabra 'Ghostgum' y sustituir por la ruta correcta donde esté instalado gsprint)
 
-
+- Rellenar las tablas básicas:
+	- Añadir usuarios: Tabla 'usuarios' (introducir id_nivel(tabla niveles) en el campo nivel para configurar los permisos.
+	- Añadir zonas: Tabla 'zonas'
+	- Añadir mesas: Tabla 'puntos'
 
 
 
