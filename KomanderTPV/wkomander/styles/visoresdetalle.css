@@ -1,0 +1,217 @@
+#page-wrap{
+    width:100%;
+}
+#panel_botones{
+        
+	margin: 5px 5px 5px 5px;
+	height: 145px;
+        width: 100%;
+/*	background:whitesmoke;*/
+        margin:auto;       
+      	overflow:hidden;
+        float: left;
+        
+        background: rgba(200,200,200,.4);
+         background-image: url('../images/wkomander/skin/visores/td4_relleno_botones.png');
+        background-position: 0 50px;
+        background-repeat: repeat-x;
+        
+
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.b_visores{
+       
+    width: 113px;
+    height:113px;
+    font-size:24px;
+   
+    margin-top:4px;
+    margin-right: 2px;
+      
+    margin-bottom: 4px;
+    padding: 10px 10px 10px 10px;
+    
+    float:right;
+   
+   margin-right: 20px; 
+   background: url('../images/wkomander/skin/visores/b_com.png') no-repeat;
+   
+ font: bold 18px arial,verdana, helvetica, sans-serif;
+ 
+      -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    
+    	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 5px 5px 5px rgba(0,0,0,.4);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 5px 5px 5px rgba(0,0,0,.4);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 5px 5px 5px rgba(0,0,0,.4);
+}
+.b_slider{
+    padding-top:15px;
+    width:130px;
+    height:120px;
+    float:left;
+    margin-left: 5px;
+    margin-top: 5px;
+    font: bold 17px arial,verdana, helvetica, sans-serif;
+    border: 3px solid #cc9000;
+    background:rgba(237,250,0,0.5);
+    -webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px; 
+    
+}
+
+.b_menu{
+      width: 140px;
+  height: 200px;
+   background: url('../images/wkomander/skin/visores/b_menu.png') no-repeat;
+  
+}
+
+
+#container_grupo1{
+        margin-top:5px;
+
+        width: 30%;
+
+      	overflow:auto;
+        float: left;
+        
+       background: rgba(200,200,200,.4);
+        
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+#container_grupo2{
+        margin-top:5px;
+        margin-left:5px;
+        width: 33%;
+    
+      	overflow:auto;
+        float: left;
+        
+       background: rgba(200,200,200,.4);
+        
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+#container_grupo3{
+        margin-top:5px;
+        margin-left:5px;
+        width: 33%;
+     
+      	overflow:auto;
+        float: left;
+        
+       background: rgba(200,200,200,.4);
+        
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+
+
+
+table tr{
+    height: 40px;
+}
+
+#tabla_grupo1, #tabla_grupo3, #tabla_grupo2{
+    width: 100%;
+     font: bold 17px arial,verdana, helvetica, sans-serif;
+}
+
+
+
+.verde{
+    background: greenyellow;
+/*    background: rgba(100,200,100,.7);*/
+}
+
+.rojo{
+    background:burlywood;
+}
+
+.primeros{
+    background:pink;
+}
+
+.llevar{
+    background:darkorange;
+}
+
+ 
+ /*---------------------------PARA EL SLIDER--------------------------------------*/
+#sliderWrap {
+margin: 0 auto;
+width: 500px;
+height: 0px;
+}
+#slider {
+position: absolute;
+left: 0px;
+width: 90%;
+height: 580px;
+margin-top: -580px;
+margin-left:auto;
+margin-right: auto;
+/*background-image:url(slider.png);*/
+/*background-repeat:no-repeat;*/
+/* background: -webkit-gradient(linear, left top, left bottom, from(#FFD800), to(#661100));
+	background: -moz-linear-gradient(top,    #FFD800,#661100);
+	background: linear-gradient(-90deg, #FFD800, #661100 );*/
+   
+
+/*background-position: bottom;*/
+
+}
+#slider img {
+border: 0;
+}
+#sliderContent {
+margin: 50px 0 0 50px;
+position: absolute;
+
+width: 100%;
+height: 500px;
+text-align:center;
+/*background-color:#FFFFCC;
+color:#333333;*/
+font-weight:bold;
+padding: 15px 15px 15px 15px;
+
+ background: rgba(255,255,255,.7);  	
+          -webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+        font-size:24px;
+}
+#header {
+margin: 0 auto;
+width: 90%;
+/*background-color: #F0F0F0;*/
+height: 200px;
+padding: 10px;
+}
+#openCloseWrap {
+position:absolute;
+margin: 1px 0 0 1px;
+left:30px;
+width: 0px;
+height: 50px;
+font-size:12px;
+font-weight:bold;
+top:-55px;
+}
+
+
+/*--------------------FIN SLIDER---------------------------------------------*/
+

@@ -1,0 +1,78 @@
+/* 
+    Document   : familias
+    Created on : 10-jul-2012, 17:38:08
+    Author     : luismips
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+
+
+#page-wrap{
+    margin-left: auto;
+    margin-right: auto;
+   
+    width: 90%;
+    background: rgba(200,200,200,.7);
+    
+    
+    
+}
+
+#tabla_fam_nueva{
+    margin-left: auto;
+    margin-right: auto;
+    height: 150px;
+    width: 90%;
+    background: rgba(170,170,70,.7);
+    font: bold 24px verdana, arial, helvetica, sans-serif;
+    
+}
+
+#tabla_familias{
+     margin-left: auto;
+    margin-right: auto;
+    padding:10px 10px 10px 10px;
+/*    height: 120px;*/
+    width: 90%;
+    background: rgba(200,200,100,.5);
+    font: bold 20px verdana, arial, helvetica, sans-serif;
+    border:1px solid #000;
+/*    background: rgba(200,100,100,.7);*/
+    
+}
+
+#nueva, #nombre, #grupo, #tcolor, #padre, #preferencia, #torden, #timagen{
+    font: bold 22px verdana, arial, helvetica, sans-serif;
+    width: 200px;
+}
+
+#td_img img{
+    width: 100px;
+}
+
+.boton{
+        margin-top:30px;
+        margin-right: 1px;
+        margin-left: 1px;  
+        margin-bottom: 30px;
+
+	height: 120px;
+        width: 120px;
+	background:#FFD800;
+/*        margin:auto;*/
+        float: left;
+        text-align: center;
+        border: 2px solid #000;
+        padding: 5px 5px 5px 5px;
+        
+
+      	
+          -webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+        font-size:24px;
+}
+

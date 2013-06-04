@@ -1,0 +1,65 @@
+#container_caja{
+        margin-top:10px;
+	
+	height: 95%;
+        width: 90%;
+/*	background:whitesmoke;*/
+        margin-left:auto;    
+        margin-right:auto;
+      	overflow:hidden;
+/*        float: left;*/
+        
+        background: rgba(150,150,100,.7);
+        
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+#tabla_caja{
+        font: bold 30px verdana, arial, helvetica, sans-serif;
+        margin-top:10px;
+	
+	
+        width: 40%;
+/*	background:whitesmoke;*/
+        margin-left:auto;    
+        margin-right:auto;
+      	overflow:auto;
+/*        float: left;*/
+        
+        background: rgba(200,200,100,.7);
+        
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+#tIdCaja, #tFecha, #tCambio, #tEfectivo, #tTarjeta, #tTotal, #tPropina, #tSubtotal{
+    font: bold 26px verdana, arial, helvetica, sans-serif;
+    text-align: right;
+}
+
+.boton{
+     margin-top:30px;
+        margin-right: 20px;
+        margin-left: 1px;  
+        margin-bottom: 30px;
+
+	height: 120px;
+        width: 120px;
+	background:#FFD800;
+/*        margin:auto;*/
+        float: right;
+        text-align: center;
+        border: 2px solid #000;
+        padding: 5px 5px 5px 5px;
+        
+
+      	
+          -webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+        font-size:24px;
+    
+}

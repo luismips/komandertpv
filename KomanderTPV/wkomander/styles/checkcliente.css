@@ -1,0 +1,29 @@
+/* 
+    Document   : checkcliente
+    Created on : 25-may-2012, 8:29:04
+    Author     : luismips
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+#tabla_cliente{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 95%;
+    background: rgba(200,200,200,.5);
+}
+
+#ttlf, #tnombre, #tdireccion, #tzona, #tobserv{
+    font: bold 30px verdana, arial, helvetica, sans-serif;
+}
+

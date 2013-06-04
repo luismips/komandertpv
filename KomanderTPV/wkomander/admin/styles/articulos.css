@@ -1,0 +1,123 @@
+/* 
+    Document   : articulos
+    Created on : 11-jul-2012, 8:41:45
+    Author     : luismips
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#page-wrap{
+    margin-left: auto;
+    margin-right: auto;
+    /*height: 100%;*/
+    width: 90%;
+    background: rgba(200,200,200,.7);
+    
+    
+    
+}
+
+#tabla_articulos{
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px 10px 10px 10px;
+/*    height: 120px;*/
+    width: 100%;
+    background: rgba(200,200,100,.5);
+    font: bold 20px verdana, arial, helvetica, sans-serif;
+    border:1px solid #000;
+}
+
+#tabla_detalle, #tabla_mods{
+/*    margin-left: auto;
+    margin-right: auto;*/
+/*    height: 120px;*/
+    width: 100%;
+    background: rgba(200,200,100,.7);
+    font: bold 20px verdana, arial, helvetica, sans-serif;
+    
+}
+
+/*table td{
+    border:1px solid #000;
+}*/
+
+input, select{
+    font: bold 20px verdana, arial, helvetica, sans-serif;
+}
+
+/*#familia, #nombre, #pvp, #descrip, #grupo {
+    
+    width: 300px;
+}*/
+#nombre{
+    width:450px;
+}
+#torden{
+    width:50px;
+}
+
+#pvp{
+    width:100px;
+}
+#tAddUds {
+    margin-left:20px;
+    width: 80px;
+}
+
+#tcolor {
+    
+    width: 170px;
+}
+ 
+.boton{
+        margin-top:30px;
+        margin-right: 1px;
+        margin-left: 1px;  
+        margin-bottom: 30px;
+
+	height: 120px;
+        width: 120px;
+	background:#FFD800;
+/*        margin:auto;*/
+        float: left;
+        text-align: center;
+        border: 2px solid #000;
+        padding: 5px 5px 5px 5px;
+        
+
+      	
+          -webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+        font-size:24px;
+}
+.botoncillo{
+        margin-top:1px;
+        margin-right: 1px;
+        margin-left: 1px;  
+        margin-bottom: 1px;
+
+	height: 30px;
+        width: 30px;
+
+        
+        text-align: center;
+        background:#FFD800;
+        padding: 5px 5px 5px 5px;
+        border:2px solid #aa0;
+
+          -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+        font-size:24px;
+}
+
+.linea_articulo td{
+    border-bottom:1px solid #000;
+    background: rgba(230,230,230,.5);
+}
+
+#td_img img{
+    width: 100px;
+}

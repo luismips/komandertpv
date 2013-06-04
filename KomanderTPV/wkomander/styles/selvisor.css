@@ -1,0 +1,53 @@
+#selvisor_t{
+        padding-top: 10px;
+        margin-top:5px;
+/*	margin: 15px 15px 15px 15px;*/
+	height: 40px;
+        width: 90%;
+	vertical-align: middle;
+        margin-left:auto;   
+        margin-right:auto;
+      	overflow:auto;
+               
+font: bold 20px arial,verdana, helvetica, sans-serif;
+	background: rgba(200,200,200,.5);
+        
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+
+}
+
+#sel_visores{
+        margin-top:5px;
+/*	margin: 15px 15px 15px 15px;*/
+	height: 95%;
+        width: 90%;
+	
+        margin-left:auto;   
+        margin-right:auto;
+      	overflow:auto;
+               
+
+	background: rgba(200,200,200,.5);
+        
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+
+}
+
+#sel_visor{
+    /*padding-top:15px;*/
+    width:130px;
+    height:130px;
+    float:left;
+    margin-left: 5px;
+    margin-top: 5px;
+    font: bold 20px arial,verdana, helvetica, sans-serif;
+    border: 3px solid #55aa55;
+    background:rgba(150,250,150,0.5);
+    -webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px; 
+}

@@ -1,0 +1,97 @@
+/* 
+    Document   : modificadores
+    Created on : 11-jul-2012, 7:16:11
+    Author     : luismips
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#page-wrap{
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    width: 90%;
+    background: rgba(170,170,70,.7);
+    
+    
+    
+}
+
+#tabla_nuevo{
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+    width: 100%;
+    background: rgba(170,170,70,.7);
+    font: bold 22px verdana, arial, helvetica, sans-serif;
+    
+}
+
+#tabla_mods, #detalle_mods{
+    margin-left: auto;
+    margin-right: auto;
+/*    height: 150px;*/
+    width: 100%;
+    background: rgba(200,200,100,.7);
+    font: bold 22px verdana, arial, helvetica, sans-serif;
+    
+}
+
+
+#detalle_mods td{
+    border-bottom:1px solid #000;
+    background: rgba(230,230,230,.5);
+}
+
+
+#nuevo_grupo, #nombre_grupo, #nombre_mod, #precio_mod, #descrip_mod{
+    font: bold 24px verdana, arial, helvetica, sans-serif;
+    width: 200px;
+}
+
+
+.boton{
+        
+          margin-top:1px;
+        margin-right: 1px;
+        margin-left: 1px;  
+        margin-bottom: 30px;
+
+	height: 120px;
+        width: 120px;
+	background:#FFD800;
+/*        margin:auto;*/
+        float: left;
+        text-align: center;
+        border: 2px solid #000;
+        padding: 5px 5px 5px 5px;
+        
+
+      	
+          -webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+        font-size:24px;
+}
+
+.botoncillo{
+       margin-top:1px;
+        margin-right: 1px;
+        margin-left: 1px;  
+        margin-bottom: 1px;
+
+	height: 30px;
+        width: 30px;
+
+        
+        text-align: center;
+        background:#FFD800;
+        padding: 5px 5px 5px 5px;
+        border:2px solid #aa0;
+
+          -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+        font-size:24px;
+}
+

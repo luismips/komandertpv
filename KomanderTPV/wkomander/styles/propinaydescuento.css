@@ -1,0 +1,38 @@
+/* 
+    Document   : propinaydescuento
+    Created on : 14-jun-2012, 17:47:39
+    Author     : luismips
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+table{
+/*	background:whitesmoke;*/
+      	text-align:center; /*para que en IE 5.5 salga centrado*/
+        font: bold 22px verdana, arial, helvetica, sans-serif;
+       
+        
+}
+
+td{
+     border-bottom: 1px solid #000;
+}
+
+input{
+    font: bold 22px verdana, arial, helvetica, sans-serif;
+}
+
+#page-wrap{
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+     background: rgba(200,200,200,.5);
+}
+
+#tabla_avg{
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
