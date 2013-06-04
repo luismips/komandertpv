@@ -15,7 +15,7 @@ Now that the system is Open Source, it could be more efficient in less time than
 
 - Web server: 
 	
-	a) Xampp: http://sourceforge.net/projects/xampp/
+	a) Xampp: http://sourceforge.net/projects/xampp/<br/>
 	b) Wamp: http://www.wampserver.com/
 	
 	- httpd.conf must allow access to devices in the network.
