@@ -65,7 +65,11 @@ Now that the system is Open Source, it could be more efficient in less time than
 		- /clases/_pte.php
 	(Yo can look for 'Ghostgum' and replace the path to 'gsprint' for the right one)
 
-
+- Fill the basic tables:
+	- Add users: Table 'usuarios' (field 'nivel' is 'id_nivel' in table 'niveles')
+	- Add zones: Table 'zonas'
+	- Add tables: Table 'puntos'
+	- Configure Categories, products and modifiers from 'admin' user.
 
 
 
