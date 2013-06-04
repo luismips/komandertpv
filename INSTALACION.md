@@ -14,7 +14,7 @@ Ahora que el sistema es de código abierto se podrá mejorar todo más rápidame
 
 - Servidor web: 
 	
-	a) Xampp: http://sourceforge.net/projects/xampp/
+	a) Xampp: http://sourceforge.net/projects/xampp/<br/>
 	b) Wamp: http://www.wampserver.com/
 	
 	- httpd.conf debe estar configurado para permitir acceso desde cualquier equipo en la red.
