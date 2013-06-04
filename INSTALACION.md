@@ -1,7 +1,7 @@
 #INSTALACION KomanderTPV
 ================
 
-KomanderTPV es un sistema desarrollado con HTML, PHP y JavaScript. Corre bajo un servidor Apache y un servidor de base de datos MySQL. Utiliza Ghostscript y GSview para la impresión de documentos.
+KomanderTPV es un sistema desarrollado con HTML, PHP y JavaScript. Corre bajo un servidor Apache y un servidor de base de datos MySQL. Utiliza dompdf, Ghostscript y GSview para la impresión de documentos.
 
 Actualmente no existe un archivo de instalación para facilitar su puesta en marcha. Espero tener tiempo para crear una instalación más fácil y automatizada, ya que es una de las tareas pendientes, junto con un backend mejorado para no tener que usar phpMyAdmin para realizar ciertas configuraciones.
 
@@ -18,7 +18,9 @@ Ahora que el sistema es de código abierto se podrá mejorar todo más rápidame
 	b) Wamp: http://www.wampserver.com/
 	
 	- httpd.conf debe estar configurado para permitir acceso desde cualquier equipo en la red.
-	- Configurar seg�n timezone en php.ini
+	- Configurar según timezone en php.ini
+
+- dompdf: https://github.com/dompdf/dompdf
 
 - Ghostcript: http://www.ghostscript.com/	
 
@@ -37,6 +39,8 @@ Ahora que el sistema es de código abierto se podrá mejorar todo más rápidame
 
 	- demo.sql: Base de datos de demostración.
 	- wkomander: Base de datos vacía.
+
+- La carpeta principal de dompdf debe ser renombrada para que su nombre sea 'dompdf'. Una vez renombrada, meter dentro de otra carpeta con el nombre 'pdf'.
 
 - Copiar las carpetas 'wkomander' y 'pdf' dentro del directorio público de Apache (/www o /httpdocs dependiendo del sistema operativo)
 	- La carpeta 'wkomander' se puede renombrar al nombre que prefiera. Si lo cambia, tendrá que indicarlo modificando la variable '_APP_FOLDER_' dentro del archivo config.php
