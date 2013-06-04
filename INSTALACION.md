@@ -65,9 +65,10 @@ Ahora que el sistema es de código abierto se podrá mejorar todo más rápidame
 	(Buscar en cada archivo la palabra 'Ghostgum' y sustituir por la ruta correcta donde esté instalado gsprint)
 
 - Rellenar las tablas básicas:
-	- Añadir usuarios: Tabla 'usuarios' (introducir id_nivel(tabla niveles) en el campo nivel para configurar los permisos.
+	- Añadir usuarios: Tabla 'usuarios' (el campo 'nivel' es la id_nivel de la tabla 'niveles')
 	- Añadir zonas: Tabla 'zonas'
 	- Añadir mesas: Tabla 'puntos'
+	- Configurar Familias, artículos y modificadores desde el usuario 'admin'
 
 
 
