@@ -465,9 +465,17 @@ public function g_total_todos($mesa) {
             $propina = ($suma * $avg_propina)/100;
             $descuento = ($suma * $avg_descuento)/100;
 
+            
+            
             $total = $suma + $propina - $descuento;
             
-            return $total;
+            if (_DECIMALES_ !="S"){
+                return round($total, 0, PHP_ROUND_HALF_UP);
+            }else{
+                return $total;
+            }
+   
+           
         }   
   }
   
