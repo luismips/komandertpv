@@ -39,7 +39,13 @@ include_once('../clases/conexion.php');
      <?php
  echo '<script type="text/javascript">
         
-
+        function ver(){
+              if ((document.getElementById("tFecha1").value !="") && (document.getElementById("tFecha2").value !="")){
+                location.href="ventaarticulos.php?fecha1="+document.getElementById("tFecha1").value+"&fecha2="+document.getElementById("tFecha2").value;
+              }else{
+                location.href="ventaarticulos.php";
+              }
+        }
 
        function alf(){
           if ((document.getElementById("tFecha1").value !="") && (document.getElementById("tFecha2").value !="")){
@@ -97,15 +103,16 @@ include_once('../clases/conexion.php');
                   <td>
                       <table>
                           <tr><td> Fecha 1:</td></tr>
-                          <tr><td><input type="text" id="tFecha1" class="datepicker" value="<?php echo $fecha1; ?>"/></td></tr>
+                          <tr><td><input type="text" id="tFecha1" class="datepicker" value="<?php echo $fecha1; ?>" onchange="ver()"/></td></tr>
                           <tr><td> Fecha 2:</td></tr>
-                          <tr><td><input type="text" id="tFecha2" class="datepicker" value="<?php echo $fecha2; ?>"/></td></tr>
+                          <tr><td><input type="text" id="tFecha2" class="datepicker" value="<?php echo $fecha2; ?>" onchange="ver()"/></td></tr>
                       </table>
                   </td>
                   <td><div id="bAlf" class="boton_izq" onclick="alf()">ALF</div></td>
                   <td><div id="bUds" class="boton_izq" onclick="uds()">UDS</div></td>
                   <td><div id="bPvp" class="boton_izq" onclick="pvp()">PVP</div></td>
-                  <td><div id="bVolver" class="boton_izq" onclick="location.href='../admin.php'">VOLVER</div></td>
+                 
+                 <td><div id="bVolver" class="boton_izq" onclick="location.href='../admin.php'">VOLVER</div></td>
               </tr>            
               
               
@@ -119,69 +126,112 @@ include_once('../clases/conexion.php');
     
     $bd=Db::getInstance();
     $c = new conexion();
+    
+    $comienzo_html = '<table id="tabla_info">
+                         <thead>
+                            <tr>
+                                    <th scope="col">ARTICULO</th>
+                                    <th scope="col">STOCK</th>
+                                    <th scope="col">UDS VENDIDAS</th>
+                                    <th scope="col">PVP</th>
+
+                            </tr>
+                         </thead>';
+    
+    $suma = 0;
+    
+    $articulo = [];
+    $cantidad =[];
+    $pvp = [];
+  
 
 
-   if (isset($_GET['uds'])){
-     $ssql = "SELECT articulos.uds_stock, historial_puntos_descr.idarticulo, historial_puntos_descr.articulo, SUM(historial_puntos_descr.cantidad) AS cantidad, 
-           SUM(historial_puntos_descr.pvp) AS pvp FROM historial_puntos_descr INNER JOIN 
+     if (isset($_GET['uds'])){
+        $ssql= "SELECT  historial_puntos_descr.idarticulo,
+                  historial_puntos_descr.articulo,
+                  historial_puntos_descr.cantidad,
+                  historial_puntos_descr.pvp                  
+        FROM historial_puntos_descr INNER JOIN 
         historial_puntos ON historial_puntos_descr.id_hist_punto = historial_puntos.id_hist 
-        INNER JOIN articulos ON historial_puntos_descr.idarticulo = articulos.id_articulo 
         WHERE historial_puntos.fecha BETWEEN '".$fecha1."' AND '".$fecha2."' AND 
-            historial_puntos.anulado = 'N' AND historial_puntos_descr.anulado = 'N'
-            
-        GROUP BY historial_puntos_descr.articulo ORDER BY SUM(historial_puntos_descr.cantidad) DESC";
-   
+            historial_puntos.anulado = 'N' AND historial_puntos_descr.anulado = 'N' 
+            ORDER BY historial_puntos_descr.cantidad DESC
+        ";
    } else if (isset($_GET['pvp'])){  
-          $ssql = "SELECT articulos.uds_stock, historial_puntos_descr.idarticulo, historial_puntos_descr.articulo, SUM(historial_puntos_descr.cantidad) AS cantidad, 
-           SUM(historial_puntos_descr.pvp) AS pvp FROM historial_puntos_descr INNER JOIN 
+            $ssql= "SELECT  historial_puntos_descr.idarticulo,
+                  historial_puntos_descr.articulo,
+                  historial_puntos_descr.cantidad,
+                  historial_puntos_descr.pvp                  
+        FROM historial_puntos_descr INNER JOIN 
         historial_puntos ON historial_puntos_descr.id_hist_punto = historial_puntos.id_hist 
-         INNER JOIN articulos ON historial_puntos_descr.idarticulo = articulos.id_articulo 
         WHERE historial_puntos.fecha BETWEEN '".$fecha1."' AND '".$fecha2."' AND 
-            historial_puntos.anulado = 'N'  AND historial_puntos_descr.anulado = 'N'
-        GROUP BY historial_puntos_descr.articulo ORDER BY SUM(historial_puntos_descr.pvp) DESC";  
+            historial_puntos.anulado = 'N' AND historial_puntos_descr.anulado = 'N' 
+            ORDER BY historial_puntos_descr.pvp DESC  
+        ";
    }else{
-       $ssql = "SELECT articulos.uds_stock, historial_puntos_descr.idarticulo, historial_puntos_descr.articulo, SUM(historial_puntos_descr.cantidad) AS cantidad, 
-           SUM(historial_puntos_descr.pvp) AS pvp FROM historial_puntos_descr INNER JOIN 
+       
+       
+         $ssql= "SELECT  historial_puntos_descr.idarticulo,
+                  historial_puntos_descr.articulo,
+                  historial_puntos_descr.cantidad,
+                  historial_puntos_descr.pvp                  
+        FROM historial_puntos_descr INNER JOIN 
         historial_puntos ON historial_puntos_descr.id_hist_punto = historial_puntos.id_hist 
-         INNER JOIN articulos ON historial_puntos_descr.idarticulo = articulos.id_articulo 
         WHERE historial_puntos.fecha BETWEEN '".$fecha1."' AND '".$fecha2."' AND 
-            historial_puntos.anulado = 'N'  AND historial_puntos_descr.anulado = 'N'
-        GROUP BY historial_puntos_descr.articulo";
+            historial_puntos.anulado = 'N' AND historial_puntos_descr.anulado = 'N' 
+            ORDER BY historial_puntos_descr.articulo ASC
+        ";
    }
-    $rs = $bd->ejecutar($ssql);
-
-    echo '<table id="tabla_info">';
-     echo '<thead>
-		<tr>
-			<th scope="col">ARTICULO</th>
-                        <th scope="col">STOCK</th>
-                        <th scope="col">UDS VENDIDAS</th>
-			<th scope="col">PVP</th>
-			
-		</tr>
-	 </thead>';
-     $suma = 0;
-
-    if ( $rs !== false && mysql_num_rows($rs) > 0 ) {
+   
+   $rs = $bd->ejecutar($ssql);
+        
+   if ( $rs !== false && mysql_num_rows($rs) > 0 ) {
         
         while ( $a = $bd->obtener_fila($rs,0)){
+
+            $articulo[$a["idarticulo"]] = $a["articulo"];
+            if (isset($cantidad[$a["idarticulo"]])){
+                $cantidad[$a["idarticulo"]] += $a["cantidad"];
+            }else{
+                $cantidad[$a["idarticulo"]] = $a["cantidad"];
+            }
             
-          echo '<tr>
-              <td>'.$a['articulo'].'</td>
-              <td>'.preg_replace('/^(-?\d+).0+$/', '$1', $a['uds_stock']).'</td>
-              <td>'.preg_replace('/^(\d+)\.0+$/', '$1',$c->knumber($a['cantidad'])).'</td>
-              <td>'.$c->knumber($a['pvp']).'</td>
+            if (isset($pvp[$a["idarticulo"]])){
+                 $pvp[$a["idarticulo"]] += $a["pvp"];
+            }else{
+                 $pvp[$a["idarticulo"]] = $a["pvp"];
+            }
+        }
+     }
+   
+     echo $comienzo_html;
+     
+
+       foreach ($articulo as $clave => $valor) {
+           $stock = 0;
+           $sstock = "SELECT uds_stock FROM articulos WHERE id_articulo = ".$clave;
+           $rs2 = $bd->ejecutar($sstock);
+           if ( $rs2 !== false && mysql_num_rows($rs2) > 0 ) {
+                while ( $b = $bd->obtener_fila($rs2,0)){
+                    $stock = $b["uds_stock"];
+                }
+           }
+           
+          echo '<tr onclick="location.href=\'../admin/articulos.php?mod_art='.$clave.'\'">
+              <td>'.$valor.'</td>
+              <td>'.preg_replace('/^(-?\d+).0+$/', '$1', $stock).'</td>
+              <td>'.preg_replace('/^(\d+)\.0+$/', '$1',$c->knumber($cantidad[$clave])).'</td>
+              <td>'.$pvp[$clave].'</td>
           </tr>  ';
-          
-          $suma = $suma + $a['pvp'];  
-        }           
-        
-    
-        
-    }
+          $suma += $pvp[$clave];
+      }
+     
+     
     echo '<tr id="trTotal"><td colspan="3">TOTAL VENTA</td><td id="tdTotal" colspan="2">'.$c->knumber($suma).'</td>
         </tr>';
     echo '</table>';
+    
+  
    
 ?>
           
