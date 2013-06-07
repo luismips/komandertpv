@@ -215,7 +215,7 @@ $dompdf->render();
 
 //WIN------------------------------------------------------
 file_put_contents('c:\T_'.$historial.'.pdf', $dompdf->output()); 
-$cmd = 'C:\Ghostgum\gsview\gsprint.exe -printer "tiket" "c:\T_'.$historial.'.pdf';
+$cmd = _GSPRINT_ . ' -printer "tiket" "c:\T_'.$historial.'.pdf';
 //$cmd ="lpr -Slocalhost -Ptiket c:\domprueba.pdf";
 exec($cmd);
 

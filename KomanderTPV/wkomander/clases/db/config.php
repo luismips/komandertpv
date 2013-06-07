@@ -7,8 +7,8 @@ $password='zxcvbnm';//contraseña usuario
 $db='wkomander';//nombre de la base de datos
 $domain = 'localhost'; //no usado
 
-define('_WK_VERSION_', '0.9.1.130606');//versión
-define('_FECHA_VERSION_', '06/06/2013');//fecha de la version
+define('_WK_VERSION_', '0.9.1.130527');//versión
+define('_FECHA_VERSION_', '27/05/2013');//fecha de la version
 
 define('_IDIOMA_', 'es');//idioma por defecto [es, en, de, fr]
 
@@ -34,4 +34,7 @@ define('_TIMER_VISOR_', 10000);//tiempo de refresco del visor
 //REPARTO
 define('_PRECIO_REPARTO_', 1);//precio adicional a incluir si es un reparto
 
+
+//GSPRINT PATH
+define('_GSPRINT_', 'C:\Ghostgum\gsview\gsprint.exe');
 ?>

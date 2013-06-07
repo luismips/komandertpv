@@ -95,7 +95,7 @@ $html .="</td></tr></table>";
 
 
 
-    $dompdf = new DOMPDF(); 
+   $dompdf = new DOMPDF(); 
 
    $dompdf->load_html($principio.$html.$fin); 
    $dompdf->render();
@@ -105,7 +105,7 @@ $html .="</td></tr></table>";
    file_put_contents('c:\abre'.$stamp.'.pdf', $dompdf->output()); 
 
 
-    $cmd = 'C:\Ghostgum\gsview\gsprint.exe -printer "tiket" "c:\abre'.$stamp.'.pdf"';
+    $cmd = _GSPRINT_ . ' -printer "tiket" "c:\abre'.$stamp.'.pdf"';
     exec($cmd);
 
     $cmd = 'del c:\abre'.$stamp.'.pdf';

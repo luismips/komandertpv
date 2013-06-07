@@ -131,7 +131,7 @@ $old_comensal = "";
       
              if ($stmt !== false && mysql_num_rows($stmt) > 0) {
                 while ($h=$bd->obtener_fila($stmt,0)){
-                        $cmd = 'C:\Ghostgum\gsview\gsprint.exe -printer "'.$h["nombre"].'" "c:\dom'.$clave.$stamp.'.pdf"';
+                        $cmd = _GSPRINT_ . ' -printer "'.$h["nombre"].'" "c:\dom'.$clave.$stamp.'.pdf"';
 //                        $cmd ="lpr -Slocalhost -P".$d["nombre"]." c:\domprueba".$clave.".pdf";
                         exec($cmd);
                         

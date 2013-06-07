@@ -194,15 +194,15 @@ $dompdf = new DOMPDF();
 $dompdf->load_html($html); 
 $dompdf->render(); 
 
-$dompdf->stream("pruebatiket.pdf"); //COMENTAR PARA QUE NO LO GENERE para descargar , 
+//$dompdf->stream("pruebatiket.pdf"); //COMENTAR PARA QUE NO LO GENERE para descargar , 
 //SI DESCOMENTA, lo ke hace es enviar el pdf al navegador del cliente y se descarga
 
-//$stamp =  $mesa.$_SESSION["usuario"].date("His");
+$stamp =  $mesa.$_SESSION["usuario"].date("His");
 
 
 //WIN------------------------------------------------------
 file_put_contents('c:\T_'.$stamp.'.pdf', $dompdf->output()); 
-$cmd = 'C:\Ghostgum\gsview\gsprint.exe -printer "tiket" "c:\T_'.$stamp.'.pdf';
+$cmd = _GSPRINT_ . ' -printer "tiket" "c:\T_'.$stamp.'.pdf';
 //$cmd ="lpr -Slocalhost -Ptiket c:\domprueba.pdf";
 exec($cmd);
 
