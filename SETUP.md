@@ -57,13 +57,8 @@ Now that the system is Open Source, it could be more efficient in less time than
 	- Go to the table 'empresa'. Add, edit or do what you need. You can add more than one. Bussiness in use will be indicated in the variable '_EMPRESA_' in config.php file.
 
 - Setup tiket printer:
-	- Change the name of the printer to: 'tiket'
-	- Modify the path to 'gsprint' in the next files:
-		- tiket.php
-		- tiket_todo.php
-		- abrir_cliente.php
-		- /clases/_pte.php
-	(Yo can look for 'Ghostgum' and replace the path to 'gsprint' for the right one)
+	- Rename printer's name to: 'tiket'
+	- Set _GSPRINT_ variable in config.php with the path where gsprint was installed.
 
 - Fill the basic tables:
 	- Add users: Table 'usuarios' (field 'nivel' is 'id_nivel' in table 'niveles')
