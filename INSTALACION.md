@@ -57,12 +57,7 @@ Ahora que el sistema es de código abierto se podrá mejorar todo más rápidame
 
 - Configurar impresora de caja:
 	- Cambiar nombre a la impresora de caja y poner: 'tiket'
-	- Modificar los siguientes archivos para cambiar la ruta de 'gsprint':
-		- tiket.php
-		- tiket_todo.php
-		- abrir_cliente.php
-		- /clases/_pte.php
-	(Buscar en cada archivo la palabra 'Ghostgum' y sustituir por la ruta correcta donde esté instalado gsprint)
+	- Modifica la variable _GSPRINT_ dentro de config.php con la ruta donde fué instalado gsprint.
 
 - Rellenar las tablas básicas:
 	- Añadir usuarios: Tabla 'usuarios' (el campo 'nivel' es la id_nivel de la tabla 'niveles')
