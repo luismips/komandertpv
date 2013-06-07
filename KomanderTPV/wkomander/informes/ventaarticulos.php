@@ -226,6 +226,11 @@ include_once('../clases/conexion.php');
           $suma += $pvp[$clave];
       }
      
+    if (_DECIMALES_ !="S"){
+        
+        $suma = round($suma, 0, PHP_ROUND_HALF_UP);
+           
+    }  
      
     echo '<tr id="trTotal"><td colspan="3">TOTAL VENTA</td><td id="tdTotal" colspan="2">'.$c->knumber($suma).'</td>
         </tr>';
