@@ -1,5 +1,7 @@
 CHANGES
 -----------------
+#####0.9.1.130607
+- Created variable _GSPRINT_ in config.php to hold the path for gsprint
 
 #####0.9.1.130606
 - In backend, now you can go to the product page directly by clicking on it in the sales report.
