@@ -112,9 +112,17 @@ tbody tr:hover {
   background: #FFD800;
   border: 1px solid #03476F;
   color: #FFFFFF;
-  }
+}
 tbody tr:hover th,
 tbody tr.odd:hover th {
   background: #FFD800;
   color: #FFFFFF;
-  }
+}
+  
+#cajas{
+  font:20px Verdana, arial;
+  width:100%;
+  background:#aaaaFF;
+  margin: 5px 0 5px 0;
+}
+
