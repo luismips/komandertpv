@@ -45,6 +45,7 @@ define("CONTROL_LINEA",'LINE CONTROL');
 define("TEXTO_LIBRE",'FREE TEXT');
 define("INVITAR",'INVITE');
 define("BORRAR",'DELETE');
+define("CAMARERO",'WAITER');
 
 //COMENSALES
 define("NOMBRE_NUEVO_COM",'Enter name for new separate account:');

@@ -6,12 +6,15 @@ header('Content-type: text/html; charset=iso-8859-1');
    include 'lang/'.$_SESSION["lang"].'.php';
     require 'clases/includes.php'; 
     include_once('clases/_comanda.php');
-    include_once('clases/_articulos.php');   
+    include_once('clases/_articulos.php');
+    include_once('clases/_usuarios.php'); 
     
 //    
 //    $arts = new _articulos(); 
 
     $com = new _comanda();
+    $usr = new _usuarios();
+    
     
     if (isset($_GET['c'])){
         if($_GET['c']==""){
@@ -140,9 +143,15 @@ header('Content-type: text/html; charset=iso-8859-1');
             </div>';
         
         echo '<div id="dialogBorraLinea" title="'.CONTROL_LINEA.'">
-		
+		</div>';
 
-      </div>';
+      
+        echo '<div id="dialogCamarero" title="'.CAMARERO.'">'.
+              
+              $usr->combo_camareros()  
+
+            .'</div>';
+        
   
 
      
@@ -193,6 +202,10 @@ header('Content-type: text/html; charset=iso-8859-1');
            </div>';
       echo '<div id="bEliminar" class="boton_c" onclick="$(\'#dialog\').dialog(\'open\');">  
                    '.BORRAR.'
+           </div>';
+      
+      echo '<div id="bCamarero" class="boton_c" onclick="$(\'#dialogCamarero\').dialog(\'open\');">  
+                   '.CAMARERO.'
            </div>';
   
     }else{//si el comensal no tiene contenido ke lo pueda eliminar cualquiera

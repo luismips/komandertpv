@@ -86,6 +86,37 @@ class _usuarios {
         
         return $sql;
     }
+    
+    public function combo_camareros(){
+         $bd=Db::getInstance(); 
+         
+         $html = '<select id="nCamarero" name="nCamarero">';
+        
+         
+         $ssql = "SELECT nick FROM usuarios ORDER BY nick ASC";
+         
+         $stmt=$bd->ejecutar($ssql);
+         
+          if ($stmt !== false && mysql_num_rows($stmt) > 0) {
+                while ($a=$bd->obtener_fila($stmt,0)){
+                    $html .= '<option value="'.$a['nick'].'">'.$a['nick'].'</option>';  
+                }
+          }
+          
+          $html .= '</select>';
+          
+          return $html;
+    }
+    
+    public function cambio_camarero($nick, $mesa){
+        $bd=Db::getInstance(); 
+        
+        $ssql = "UPDATE historial_puntos SET usuario = '".$nick."' 
+            WHERE punto = '".$mesa."' AND cobrada = 'N' AND anulado = 'N'";
+        
+        $bd->actualizar($ssql);
+        
+    }
    
 }
 

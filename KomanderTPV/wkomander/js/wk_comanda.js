@@ -13,6 +13,7 @@
                    
                   $('#dialogBorraLinea').hide();
                   $('#dialogTexto').hide();
+                  $('#dialogCamarero').hide();
                  
 
     
@@ -57,6 +58,22 @@
                     $('#bNombre').click(function(){
                             $('#dialogNombre').dialog('open');
                             return false;
+                    });
+                    
+                    
+                    //Dialog camareros
+                     $('#dialogCamarero').dialog({
+                            autoOpen: false,
+                            width: 600,
+                            buttons: {
+                                    "OK": function() { 
+//                                            $(this).dialog("close"); 
+                                             camarero(nCamarero.value);
+                                    }, 
+                                    "Cancel": function() { 
+                                            $(this).dialog("close"); 
+                                    } 
+                            }
                     });
                     
                     
@@ -247,6 +264,10 @@ function nombre(){
         } else{
             location.href="cambionombre.php?nuevo="+nuevonombre.value;
         }
+ }
+ 
+ function camarero(nick){
+     location.href="cambiocamarero.php?n="+nick;
  }
  
 function borralinea2(idlinea, enviado){

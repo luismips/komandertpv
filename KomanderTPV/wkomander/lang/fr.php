@@ -45,6 +45,7 @@ define("CONTROL_LINEA",'CONTROLE EN LIGNE');
 define("TEXTO_LIBRE",'TEXTE LIBRE');
 define("INVITAR",'INVITER');
 define("BORRAR",'EFFACER');
+define("CAMARERO",'SERVEUR');
 
 //COMENSALES
 define("NOMBRE_NUEVO_COM",'Entrer le nom du nouveau compte s&#233;par&#233;:');

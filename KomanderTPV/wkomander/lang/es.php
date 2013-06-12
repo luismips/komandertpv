@@ -46,7 +46,7 @@ define("CONTROL_LINEA",'CONTROL DE L&#205;NEA');
 define("TEXTO_LIBRE",'TEXTO LIBRE');
 define("INVITAR",'INVITAR');
 define("BORRAR",'BORRAR');
-
+define("CAMARERO",'CAMARERO');
 
 //COMENSALES
 define("NOMBRE_NUEVO_COM",'Introduzca nombre para nuevo comensal:');

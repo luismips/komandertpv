@@ -45,6 +45,7 @@ define("CONTROL_LINEA",'LINIENSTEUERUNG');
 define("TEXTO_LIBRE",'FREITEXT');
 define("INVITAR",'LADEN');
 define("BORRAR",'L&Ouml;SCHEN');
+define("CAMARERO",'OBER');
 
 //COMENSALES
 define("NOMBRE_NUEVO_COM",'Geben Sie den Namen f&#252;r die neue separates Konto:');
