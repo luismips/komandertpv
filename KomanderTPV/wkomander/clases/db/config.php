@@ -6,8 +6,8 @@ $password='zxcvbnm';//contraseña usuario
 $db='wkomander';//nombre de la base de datos
 $domain = 'localhost'; //no usado
 
-define('_WK_VERSION_', '0.9.1.130607');//versión
-define('_FECHA_VERSION_', '07/06/2013');//fecha de la version
+define('_WK_VERSION_', '0.9.1.130612');//versión
+define('_FECHA_VERSION_', '12/06/2013');//fecha de la version
 
 define('_IDIOMA_', 'es');//idioma por defecto [es, en, de, fr]
 
