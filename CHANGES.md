@@ -1,5 +1,8 @@
 CHANGES
 -----------------
+#####0.9.1.130612
+- Administrators can change the name of the waiter in a table.
+
 #####0.9.1.130607
 - Created variable '_GSPRINT_' in config.php to hold the path for gsprint.
 - The report was based on dates,so it showed the total of a day included what you charged last night after 00:00. Now, the report is based on the daily cash.
